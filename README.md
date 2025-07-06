@@ -38,19 +38,19 @@ This repository presents the implementation of the **Fast Fourier Transform (FFT
 ##  Synthesis Comparison
 **DIT FFT**
 
-| Architecture         | Area (µm²)   | Power (Watts) | Slack (ps) | Frequency (MHz) |Notes   |
-|----------------------|--------------|---------------|------------|---------------------------------|
-| Without systolic     | *12331.008*  | *6.6463x10^-4* |    *7640*  |    *423.72*     |*report for DIT without systolic*|
-| With systolic        | *8266.752*  | *1.56193x10^-4* |    *9202*  |    *1253*     |*report for DIT with systolic*|
+
+| Architecture         | Area (µm²)   | Power (Watts)     | Slack (ps) | Frequency (MHz) | Notes                           |
+|----------------------|--------------|--------------------|------------|------------------|----------------------------------|
+| Without Systolic     | 12,331.008   | 6.6463×10⁻⁴        | 7640       | 423.72           | DIT FFT without systolic design  |
+| With Systolic        | 8,266.752    | 1.56193×10⁻⁴       | 9202       | 1253             | DIT FFT with systolic pipeline   |
 
 
 **DIF FFT**
 
-| Architecture         | Area (µm²)   | Power (Watts) | Slack (ps) | Frequency (MHz) |Notes   |
-|----------------------|--------------|---------------|------------|---------------------------------|
-| Without systolic     | *12016.742.008*  | *6.38102x10^-4* | *7705*  |    *435.72*   |*report for DIF without systolic*|
-| With systolic        | *8266.752*  | *1.56193x10^-4* |    *9202*  |    *1253*     |*report for DIF with systolic*|
->  Detailed reports are available in the `/results/` folder.
+| Architecture         | Area (µm²)     | Power (Watts)     | Slack (ps) | Frequency (MHz) | Notes                           |
+|----------------------|----------------|--------------------|------------|------------------|----------------------------------|
+| Without Systolic     | 12,016.742     | 6.38102×10⁻⁴       | 7705       | 435.72           | DIF FFT without systolic design  |
+| With Systolic        | 8,266.752      | 1.56193×10⁻⁴       | 9202       | 1253             | DIF FFT with systolic pipeline   |
 
 ---
 
