@@ -36,14 +36,20 @@ This repository presents the implementation of the **Fast Fourier Transform (FFT
 ---
 
 ##  Synthesis Comparison
+**DIT FFT**
 
-| Architecture        | LUT Count | Max Frequency (MHz) | Area (µm²) | Notes                          |
-|---------------------|-----------|----------------------|------------|---------------------------------|
-| DIT FFT             | *Insert*  | *Insert*             | *Insert*   | Baseline serial implementation |
-| DIF FFT             | *Insert*  | *Insert*             | *Insert*   | Baseline serial implementation |
-| DIT Systolic        | *Insert*  | *Insert*             | *Insert*   | Optimized for pipelining       |
-| DIF Systolic        | *Insert*  | *Insert*             | *Insert*   | High throughput design         |
+| Architecture         | Area (µm²)   | Power (Watts) | Slack (ps) | Frequency (MHz) |Notes   |
+|----------------------|--------------|---------------|------------|---------------------------------|
+| Without systolic     | *12331.008*  | *6.6463x10^-4* |    *7640*  |    *423.72*     |*report for DIT without systolic*|
+| With systolic        | *8266.752*  | *1.56193x10^-4* |    *9202*  |    *1253*     |*report for DIT with systolic*|
 
+
+**DIF FFT**
+
+| Architecture         | Area (µm²)   | Power (Watts) | Slack (ps) | Frequency (MHz) |Notes   |
+|----------------------|--------------|---------------|------------|---------------------------------|
+| Without systolic     | *12016.742.008*  | *6.38102x10^-4* | *7705*  |    *435.72*   |*report for DIF without systolic*|
+| With systolic        | *8266.752*  | *1.56193x10^-4* |    *9202*  |    *1253*     |*report for DIF with systolic*|
 >  Detailed reports are available in the `/results/` folder.
 
 ---
