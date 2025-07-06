@@ -13,14 +13,16 @@ This repository presents the implementation of the **Fast Fourier Transform (FFT
 
 ---
 
-##  Directory Structure
-├── dit/ # DIT FFT Verilog source code
-├── dif/ # DIF FFT Verilog source code
-├── dit systolic/ # Systolic DIT FFT source code
-├── dif systolic/ # Systolic DIF FFT source code
-├── results/ # Cadence Genus synthesis reports (LUTs, timing, area)
-├── LICENSE # License file
-└── README.md # Project documentation
+##  Repository Structure
+
+| Folder         | Description                                        |
+|----------------|----------------------------------------------------|
+| `dif systolic/`         | RTL files for systolic DIF filter        |
+| `dif/`   | RTL files for DIF filter                         |
+| `dit systolic/`         | RTL files for systolic DIT filter                 |
+| `dit/` | RTL files for DIT filter      |
+| `results/` | all the simulation and synthesis reports      |
+
 
 
 ---
