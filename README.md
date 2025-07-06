@@ -54,14 +54,19 @@ This repository presents the implementation of the **Fast Fourier Transform (FFT
 
 ---
 
+##  Inference
+The synthesis reports show that systolic architectures significantly reduce area and power consumption compared to non-systolic FFT designs. Both DIT and DIF implementations saw over 30% area savings and over 75% power reduction. The maximum frequency improved nearly 3×, highlighting enhanced performance due to pipelining. Overall, systolic FFTs offer superior efficiency, making them ideal for high-speed, low-power applications.
+
+---
+
 
 
 ##  Key Learnings
 
 - Verified FFT correctness for both DIT and DIF methods  
-- Demonstrated benefits of systolic architectures (e.g., throughput, pipelining)  
+- Demonstrated benefits of systolic architectures  
 - Compared synthesis metrics using a professional RTL synthesis tool  
-- Showcased trade-offs between latency, area, and performance  
+- Showcased trade-offs between latency, area, and power  
 
 ---
 
