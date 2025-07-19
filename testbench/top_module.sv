@@ -26,4 +26,24 @@ module top;
       #100; // Let the simulation run for 100 time units
       $finish; // End the simulation
   end 
-endmodule
+ // Assertions and Coverage
+  
+  always @(posedge vif.clk) begin
+  // Assumption: Clock signal should always be toggling correctly 
+      assume(vif.clk === 1'b1 || vif.clk === 1'b0);
+  // Coverage: Cover the case when all inputs are zeros
+      cover (vif.x0_re == 16'd0 && vif.x0_im == 16'd0 &&
+      vif.x1_re == 16'd0 && vif.x1_im == 16'd0 &&
+      vif.x2_re == 16'd0 && vif.x2_im == 16'd0 &&
+      vif.x3_re == 16'd0 && vif.x3_im == 16'd0);
+  // Assertion: The output values must always be within a valid range
+      assert((vif.y0_re >= -16'd32768 && vif.y0_re <= 16'd32767) &&
+            (vif.y0_im >= -16'd32768 && vif.y0_im <= 16'd32767) &&
+            (vif.y1_re >= -16'd32768 && vif.y1_re <= 16'd32767) &&
+            (vif.y1_im >= -16'd32768 && vif.y1_im <= 16'd32767) &&
+            (vif.y2_re >= -16'd32768 && vif.y2_re <= 16'd32767) &&
+            (vif.y2_im >= -16'd32768 && vif.y2_im <= 16'd32767) &&
+            (vif.y3_re >= -16'd32768 && vif.y3_re <= 16'd32767) &&
+            (vif.y3_im >= -16'd32768 && vif.y3_im <= 16'd32767));
+  end
+endmodule 
