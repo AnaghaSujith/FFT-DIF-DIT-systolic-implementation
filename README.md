@@ -8,7 +8,8 @@ This repository presents the implementation of the **Fast Fourier Transform (FFT
 
 -  **DIT and DIF FFT Implementations** in Verilog  
 -  **Systolic Architectures** for pipelined and parallel computation  
--  **Synthesis and Optimization Reports** using Cadence Genus  
+-  **Synthesis and Optimization Reports** using Cadence Genus
+-  **Layered Testbench** for verification
 
 
 ---
