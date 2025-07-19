@@ -22,6 +22,7 @@ This repository presents the implementation of the **Fast Fourier Transform (FFT
 | `dif/`   | RTL files for DIF filter                         |
 | `dit systolic/`         | RTL files for systolic DIT filter                 |
 | `dit/` | RTL files for DIT filter      |
+| `testbench/` | Layered testbench for verification      |
 | `results/` | all the simulation and synthesis reports      |
 
 
@@ -67,7 +68,8 @@ The synthesis reports show that systolic architectures significantly reduce area
 - Verified FFT correctness for both DIT and DIF methods  
 - Demonstrated benefits of systolic architectures  
 - Compared synthesis metrics using a professional RTL synthesis tool  
-- Showcased trade-offs between latency, area, and power  
+- Showcased trade-offs between latency, area, and power
+- Verified using layered testbench
 
 ---
 
